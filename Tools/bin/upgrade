@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+upgrade_system() {
+  flatpak update -y
+  paru
+}
+
+upgrade_system
+
+figlet "DONE"
