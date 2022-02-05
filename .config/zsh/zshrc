@@ -1,0 +1,52 @@
+# The first line of $ZDOTDIR/zshrc file.
+
+# Path to oh-my-zsh installation.
+export ZSH="$XDG_DATA_HOME/oh-my-zsh"
+export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/zcompdump"
+export HISTFILE="$XDG_STATE_HOME/zsh/zsh_history"
+
+# Theme and other.
+ZSH_THEME="xiong-chiamiov-plus"
+
+# Use case-sensitive completion.
+CASE_SENSITIVE="false"
+
+# Use hyphen-insensitive completion.
+HYPHEN_INSENSITIVE="true"
+
+# Disable auto-setting terminal title.
+DISABLE_AUTO_TITLE="false"
+
+# Enable command auto-correction.
+ENABLE_CORRECTION="true"
+
+# Display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+# Plugins.
+plugins=(extract sudo zoxide colored-man-pages grc)
+
+# Sources.
+source "$ZSH/oh-my-zsh.sh"
+source "/usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh"
+source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"
+source "/usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
+
+# Default editor.
+export EDITOR="rnano"
+export VISUAL="rnano"
+
+# Other variables.
+export COLORTERM="truecolor"
+export GPG_TTY="$(tty)"
+export GNUPGHOME="$XDG_CONFIG_HOME/gnupg"
+export PATH="$PATH=$PATH:$HOME/Tools/bin"
+
+# Aliases.
+alias zshrc="$EDITOR $ZDOTDIR/zshrc"
+alias exa="exa -lFh --git --group"
+alias nano="rnano"
+alias pbsend="pbincli send" && alias pbget="pbincli get" && alias pbdel="pbincli delete"
+
+# Auto rehash.
+zstyle ':completion:*' rehash true
