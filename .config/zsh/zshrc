@@ -48,5 +48,5 @@ alias exa="exa -lFh --git --group"
 alias nano="rnano"
 alias pbsend="pbincli send" && alias pbget="pbincli get" && alias pbdel="pbincli delete"
 
-# Auto rehash.
+# Enable auto-rehash.
 zstyle ':completion:*' rehash true
