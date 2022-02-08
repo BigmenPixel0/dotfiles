@@ -2,7 +2,7 @@
 
 # Path to oh-my-zsh installation.
 export ZSH="$XDG_DATA_HOME/oh-my-zsh"
-export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/zcompdump"
+export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/compdump"
 export HISTFILE="$XDG_STATE_HOME/zsh/history"
 
 # Theme.
