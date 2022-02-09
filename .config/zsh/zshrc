@@ -41,6 +41,8 @@ export COLORTERM="truecolor"
 export GPG_TTY="$(tty)"
 export GNUPGHOME="$XDG_CONFIG_HOME/gnupg"
 export PATH="$PATH=$PATH:$HOME/Tools/bin"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export GOPATH="$XDG_DATA_HOME/go"
 
 # Aliases.
 alias zshrc="$EDITOR $ZDOTDIR/zshrc"
