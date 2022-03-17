@@ -24,7 +24,7 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Plugins.
-plugins=(extract sudo zoxide colored-man-pages grc)
+plugins=(extract sudo zoxide colored-man-pages grc fzf-tab)
 
 # Sources.
 source "$ZSH/oh-my-zsh.sh"
