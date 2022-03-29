@@ -1,8 +1,8 @@
 #!/bin/zsh
 
 upgrade_system() {
-  flatpak update -y
   paru
+  flatpak update -y
 }
 
 upgrade_system
