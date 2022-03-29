@@ -37,8 +37,6 @@ export EDITOR="rnano"
 export VISUAL="rnano"
 
 # Other variables.
-export COLORTERM="truecolor"
-export GPG_TTY="$(tty)"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export PATH="$PATH=$PATH:$HOME/Tools/bin"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
